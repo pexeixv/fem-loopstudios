@@ -1,0 +1,39 @@
+.folio
+    &_wrapper
+        
+    &_header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 4em
+    &_btn
+        text-transform: uppercase
+        padding: 0.8em 2.8em
+        font-size: 0.95rem
+        border: 2px solid $gray
+        letter-spacing: 0.3em
+        transition: $trans
+        &:hover
+            background: $black
+            color: $white
+            border-color: $black
+    &_title
+        font-size: 3rem
+        transition: $trans
+    &_grid
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 2em
+    &_img
+        min-height: 400px
+        display: flex
+        align-items: flex-end
+        padding: 2em
+        cursor: pointer
+        transition: $trans
+    &_heading
+        color: $white
+        font-size: 2rem
+        line-height: 1.2
+
+

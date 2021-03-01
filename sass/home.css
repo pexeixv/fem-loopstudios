@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+body {
+  font-size: 18px;
+  background: white;
+  font-family: Alata, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main_wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/desktop/image-hero.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/desktop/image-hero.jpg") no-repeat center center/cover;
+  width: 100%;
+}
+
+.main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.main_link {
+  color: white;
+  font-size: 0.9rem;
+  padding: 0 1em;
+  display: inline-block;
+}
+
+.main_link::after {
+  margin: 0.5em auto 0;
+  content: '';
+  display: block;
+  height: 2px;
+  background: white;
+  width: 0%;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.main_link:hover::after {
+  width: 60%;
+}
+
+.main_content {
+  border: 2px solid white;
+  width: 55%;
+  padding: 2em;
+}
+
+.main_title {
+  color: white;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.details {
+  width: 100%;
+  min-height: 100vh;
+  padding: 8em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.details_wrapper {
+  margin-bottom: 5em;
+}
+
+.details_image {
+  max-width: 65%;
+}
+
+.details_text {
+  position: absolute;
+  background: white;
+  max-width: 40vw;
+  bottom: 0;
+  right: 0;
+  padding: 4em;
+}
+
+.details_title {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.details_desc {
+  font-size: 0.95rem;
+  color: #8c8c8c;
+}
+
+.folio_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4em;
+}
+
+.folio_btn {
+  text-transform: uppercase;
+  padding: 0.8em 2.8em;
+  font-size: 0.95rem;
+  border: 2px solid #8c8c8c;
+  letter-spacing: 0.3em;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.folio_btn:hover {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+.folio_title {
+  font-size: 3rem;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.folio_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+}
+
+.folio_img {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 2em;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.folio_heading {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em 0;
+}
+
+.footer_wrapper {
+  margin-top: 10em;
+  background: black;
+}
+
+.footer_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+.footer_link {
+  color: white;
+  font-size: 0.85rem;
+}
+
+.footer_link::after {
+  margin: 0.5em auto 0;
+  content: '';
+  display: block;
+  height: 2px;
+  background: white;
+  width: 0%;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.footer_link:hover::after {
+  width: 60%;
+}
+
+.footer_right, .footer_left {
+  gap: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_left {
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+}
+
+.footer_right {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer_copyright {
+  color: #8c8c8c;
+  font-size: 0.85rem;
+}
+
+.footer_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.footer_social {
+  cursor: pointer;
+}
+
+.footer_social::after {
+  margin: 0.5em auto 0;
+  content: '';
+  display: block;
+  height: 2px;
+  background: white;
+  width: 0%;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.footer_social:hover::after {
+  width: 90%;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,40 @@
+.main
+    &_wrapper
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/desktop/image-hero.jpg') no-repeat center center/cover
+        width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 100vh
+    position: relative
+    &_header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 3em 0
+        position: absolute
+        top: 0
+        width: 100%
+    &_link
+        color: $white
+        font-size: 0.9rem
+        padding: 0 1em
+        display: inline-block
+        &::after
+            margin: 0.5em auto 0
+            content: ''
+            display: block
+            height: 2px
+            background: $white
+            width: 0%
+            transition: $trans
+        &:hover::after
+            width: 60%
+    &_content
+        border: 2px solid $white
+        width: 55%
+        padding: 2em
+    &_title
+        color: $white
+        font-size: 4rem
+        line-height: 1.1

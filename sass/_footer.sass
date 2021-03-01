@@ -1,0 +1,52 @@
+.footer
+    &_wrapper
+        margin-top: 10em
+        background: $black
+    display: flex
+    color: $white
+    align-items: center
+    justify-content: space-between
+    padding: 3em 0
+    &_links
+        display: flex
+        gap: 1.5em
+    &_link
+        color: white
+        font-size: 0.85rem
+        &::after
+            margin: 0.5em auto 0
+            content: ''
+            display: block
+            height: 2px
+            background: $white
+            width: 0%
+            transition: $trans
+        &:hover::after
+            width: 60%
+    &_right, &_left
+        gap: 1.5em
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &_left
+        align-items: self-start
+    &_right
+        align-items: flex-end
+    &_copyright
+        color: $gray
+        font-size: 0.85rem
+    &_socials
+        display: flex
+        gap: 1em
+    &_social
+        cursor: pointer
+        &::after
+            margin: 0.5em auto 0
+            content: ''
+            display: block
+            height: 2px
+            background: $white
+            width: 0%
+            transition: $trans
+        &:hover::after
+            width: 90%
