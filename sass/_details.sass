@@ -10,6 +10,8 @@
     position: relative
     &_image
         max-width: 65%
+        &-mob
+            display: none
     &_text
         position: absolute
         background: $white
@@ -23,3 +25,30 @@
     &_desc
         font-size: 0.95rem
         color: $gray
+
+@media screen and ( max-width: 1000px )
+    .details
+        padding: 8em 0 2em
+        &_wrapper
+            margin-bottom: 0em
+        align-items: center
+        &_text
+            position: unset
+        &_img
+            display: none
+            &-mob
+                display: inline
+        &_text
+            text-align: center
+            max-width: unset
+            text-align: center
+            // padding: 1em
+        &_title
+            font-size: 2.8rem
+        &_desc
+            font-size: 1rem
+
+@media screen and ( max-width: 550px )
+    .details
+        &_title
+            font-size: 2.4rem

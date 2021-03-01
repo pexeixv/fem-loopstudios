@@ -17,10 +17,13 @@
             background: $black
             color: $white
             border-color: $black
+        &-mob
+            display: none
     &_title
         font-size: 3rem
         transition: $trans
     &_grid
+        width: 100%
         display: grid
         grid-template-columns: repeat(4, 1fr)
         grid-gap: 2em
@@ -37,3 +40,23 @@
         line-height: 1.2
 
 
+@media screen and ( max-width: 1080px )
+    .folio
+        &_title
+            margin: 0 auto
+        &_btn
+            display: none
+            &-mob
+                display: block
+                width: max-content
+                margin: 2em auto
+                text-align: center
+        &_grid
+            grid-template-columns: 1fr
+        &_img
+            min-height: 200px
+
+@media screen and ( max-width: 550px )
+    .folio
+        &_title
+            font-size: 2.4rem

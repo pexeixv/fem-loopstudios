@@ -50,3 +50,15 @@
             transition: $trans
         &:hover::after
             width: 90%
+
+@media screen and ( max-width: 1080px )
+    .footer
+        &_wrapper
+            margin-top: 5em
+        flex-direction: column
+        gap: 2em
+        &_left,&_right
+            align-items: center
+        &_links
+            flex-direction: column
+            text-align: center
