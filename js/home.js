@@ -50,5 +50,7 @@ if (device == 'mobile') {
 bars = document.querySelector('.bars');
 nav = document.querySelector('.main_nav');
 bars.addEventListener('click', () => {
-    nav.classList.toggle('show');
+    if (nav.classList.toggle('show'))
+        bars.src = '../img/icon-close.svg';
+    else bars.src = '../img/icon-hamburger.svg';
 })
